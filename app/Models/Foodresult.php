@@ -1,0 +1,123 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Foodresult extends Model
+{
+    use HasFactory;
+
+    protected $table = 'foodresults';
+
+    protected $primaryKey = 'id';
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = [
+        "Name",
+        "Time",
+        "Class",
+        "Note",
+        "Regene",
+        "Refresh",
+        "Regain",
+        "HPtotal",
+        "Mptotal",
+        "Tptotal",
+        "HP",
+        "HPpercent",
+        "HPmax",
+        "MP",
+        "MPpercent",
+        "MPmax",
+        "STR",
+        "DEX",
+        "VIT",
+        "AGI",
+        "INT",
+        "MND",
+        "CHR",
+        "ResistFire",
+        "ResistIce",
+        "ResistWind",
+        "ResistEarth",
+        "ResistLightning",
+        "ResistWater",
+        "ResistLight",
+        "ResistDark",
+        "Accuracy",
+        "AccuracyPercent",
+        "AccuracyMax",
+        "RangedAccuracy",
+        "Attack",
+        "AttackPercent",
+        "AttackMax",
+        "RangedAccuracyPercent",
+        "RangedAccuracyMax",
+        "RangedAttack",
+        "RangedAttackPercent",
+        "RangedAttackMax",
+        "MagicAccuracy",
+        "MagicAccuracyPercent",
+        "MagicAccuracyMax",
+        "MagicAttack",
+        "MagicAttackPercent",
+        "MagicAttackMax",
+        "Evasion",
+        "EvasionPercent",
+        "EvasionMax",
+        "Defense",
+        "DefensePercent",
+        "DefenseMax",
+        "MagicEvasion",
+        "MagicEvasionPercent",
+        "MagicEvasionMax",
+        "MagicDefense",
+        "MagicDefensePercent",
+        "MagicDefenseMax",
+        "Enmity",
+        "DA",
+        "TA",
+        "STP",
+        "SubtleBlow",
+        "MB2",
+        "FCpercent",
+        "Counter",
+        "Plantoid",
+        "Beast",
+        "Arcana",
+        "Aquan",
+        "Demon",
+        "Undead",
+        "Lizard",
+        "Vermin",
+        "Dragon",
+        "Amorph",
+        "Bird",
+        "Slow",
+        "Sleep",
+        "Silence",
+        "Stun",
+        "Virus",
+        "Poison",
+        "Blind",
+        "Paralyze",
+        "Petrify",
+        "Curse",
+        "Amnesia",
+        "HHP",
+        "HMP",
+        "SynthesisSuccessRate",
+        "SyntheticSkillIncreaseRate",
+        "SyntheticMaterialLossRate",
+        "HQSuccessRate",
+        "BattleSkillIncreaseRate",
+        "MagicSkillIncreaseRate",
+        "FishingSkillIncreaseRate",
+    ];
+
+}
