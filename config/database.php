@@ -1,9 +1,7 @@
 <?php
 
 use Illuminate\Support\Str;
-$DATABASE_URL=parse_url("mysql://fo426hkpqzmlxku7:gswhokki0m8azd9c@s465z7sj4pwhp7fn.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/fkid0k0hqtc9bld5");
 
-// $DATABASE_URL=parse_url("postgres://agmwzlmxbhidkd:e8c972fdcbd1a15bf6325426dd898defdda8d3da1f6663d68bfdf2b0ceb4d0e8@ec2-34-233-114-40.compute-1.amazonaws.com:5432/ddsqjrptvfq0p1");
 return [
 
     /*
@@ -46,15 +44,15 @@ return [
             'prefix' => '',
             'foreign_key_constraints' => env('DB_FOREIGN_KEYS', true),
         ],
-/*
+
         'mysql' => [
             'driver' => 'mysql',
             'url' => env('DATABASE_URL'),
-            'host' => 's465z7sj4pwhp7fn.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
-            'port' => '3306',
-            'database' => 'fkid0k0hqtc9bld5',
-            'username' => 'fo426hkpqzmlxku7',
-            'password' => 'gswhokki0m8azd9c',
+            'host' => env('DB_HOST', '127.0.0.1'),
+            'port' => env('DB_PORT', '3306'),
+            'database' => env('DB_DATABASE', 'forge'),
+            'username' => env('DB_USERNAME', 'forge'),
+            'password' => env('DB_PASSWORD', ''),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
@@ -66,7 +64,7 @@ return [
                 PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
             ]) : [],
         ],
-*/
+
 
         'mysql' => [
             'driver' => 'mysql',
